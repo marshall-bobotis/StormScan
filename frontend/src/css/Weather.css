@@ -1,0 +1,177 @@
+.weather-container {
+    background: linear-gradient(to bottom, #81a193, #423f61);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    color: #03dac5;
+}
+
+.weather-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.weather-title {
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.weather-form {
+    display: flex;
+    align-items: center;
+}
+
+.weather-input {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.weather-button, .unit-toggle {
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    background-color: #4a90e2;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.weather-button {
+    border-radius: 0 5px 5px 0;
+}
+
+.unit-toggle {
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.weather-button:hover, .unit-toggle:hover {
+    background-color: #357abd;
+}
+
+.weather-info {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.weather-main {
+    text-align: center;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.weather-temp {
+    font-size: 3em;
+    margin: 10px 0;
+}
+
+.weather-description {
+    font-size: 1.2em;
+    text-transform: capitalize;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.weather-details p {
+    font-size: 1.1em;
+}
+
+.favorites-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.favorite-item {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.favorite-item:hover {
+    background-color: #357abd;
+}
+
+.favorite-button {
+    background: none;
+    border: none;
+    color: #ffd700;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.storm-yes {
+    color: #ff4500;
+    font-weight: bold;
+}
+
+.storm-no {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .weather-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .weather-form {
+        margin-top: 10px;
+    }
+
+    .weather-info {
+        flex-direction: column;
+    }
+
+    .weather-details {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.weather-forecast {
+    margin-top: 20px;
+}
+
+.forecast-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.forecast-item {
+    text-align: center;
+    width: 18%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.forecast-item img {
+    width: 50px;
+    height: 50px;
+}
